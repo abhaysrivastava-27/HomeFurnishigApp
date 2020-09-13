@@ -15,6 +15,7 @@ createDynamicHtml = (filteredData) => {    // Function to create dynamic html wh
             const logo = document.createElement('img')
             logo.setAttribute('src', d.image)
             logo.setAttribute('class', 'image')
+            logo.setAttribute('alt',d.title)
 
             const p = document.createElement('p')
             p.textContent = d.title

@@ -15,7 +15,7 @@ getFilteredArray = (e) => {
 
         if (filterKey) {
             if (dataName != filterKey) {
-                window.localStorage.setItem("filter", dataName);
+                dataName !== "collection" && window.localStorage.setItem("filter", dataName);
 
                 filteredData = myData.filter(f => ((f[dataName] == e.target.innerHTML) && ((f[filterKey] == JSON.parse(filterVal)[0]) || (f[filterKey] == JSON.parse(filterVal)[1]))))
             } else
@@ -30,15 +30,15 @@ getFilteredArray = (e) => {
                     } else {
                         arr.push(val[0])
                         arr.push(e.target.innerHTML)
-                        window.localStorage.setItem("value", JSON.stringify(arr));
+                        dataName !== "collection" && window.localStorage.setItem("value", JSON.stringify(arr));
                         filteredData = myData.filter(f => ((f[filterKey] == val[0] || (f[filterKey] == e.target.innerHTML))))
                     }
                 }
 
         } else {
             arr.push(e.target.innerHTML)
-            window.localStorage.setItem("filter", dataName);
-            window.localStorage.setItem("value", JSON.stringify(arr));
+            dataName !== "collection" &&  window.localStorage.setItem("filter", dataName);
+            dataName !== "collection" &&  window.localStorage.setItem("value", JSON.stringify(arr));
             filteredData = myData.filter(f => f[dataName] == e.target.innerHTML)
         }
     }

@@ -23,7 +23,7 @@
             </span>
             <div class="filter"><i class="fa fa-search" onclick="filter(null);"></i><input type="text" id="userInput"
                     onkeypress="filter(event)" onkeyup="filter(event)" class="input" placeholder="Search Product...">
-                <i class="fa fa-shopping-cart" style="margin-right: 16px;" aria-hidden="true"></i>Login
+                <i class="fa fa-shopping-cart headerCart" style="margin-right: 16px;" aria-hidden="true"></i>Login
             </div>
         </div>
         <div style="display: flex;">
@@ -68,8 +68,9 @@
                 <p id="container"></p>
             </div>
             <div id="categories" class="rightDisplay">
-            </div>
+            </div>           
         </div>
+        <p id="topButton" style="text-align:center;"><a href="#top"><button class="topBtn" title="Top"><i class="fa fa-arrow-up"></i></button></a></p>
     </div>
     </div>
     <script src="filter.js"></script>
