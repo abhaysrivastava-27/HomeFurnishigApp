@@ -2,14 +2,12 @@
   .displayContent{
     display: inline-block;
     margin: 10px;
-    padding: 15px;
-    border: 5px solid rgb(221, 219, 219);
-    border-radius: 10px;
+    padding: 15px;   
   }
   
   .imgCover{
     width: 200px;
-    height: 170px;
+    height: 158px;
     overflow: hidden;
     border-bottom: 3px solid rgb(221, 219, 219);
     cursor: pointer;
@@ -23,7 +21,33 @@
     margin-left: 50%;
     margin-top: 50%;
   } 
-  
+  .itemTitle{
+      font-size: $font-normal;
+      margin-bottom: 1px;
+  }
+  .itemCategory {
+    font-size: 11px;
+    color: $light-grey
+  }
+  .itemPrice {
+    font-size: 11px;
+    margin-left: 63%;
+  }
+  .details {
+      display: flex;
+  }
 .rightDisplay {
     margin-left: 20%;
+}
+.cart{
+    margin-left: 61%;
+    font-size: 13px !important;
+}
+.star{
+    font-size: 11px !important;
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .rightDisplay {
+        margin-left: 15%;
+    } 
 }

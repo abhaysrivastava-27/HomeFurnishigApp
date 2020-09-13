@@ -21,6 +21,36 @@
   .input:focus {
     outline: none !important; }
 
+.logInBtnNavBar {
+  float: left;
+  margin: 0px 0px;
+  border: none;
+  background: none;
+  background-color: black;
+  color: white;
+  padding: 9px;
+  font-size: 120%;
+  letter-spacing: 1px;
+  outline: none;
+  transition: 0.7s;
+  cursor: pointer;
+  width: 4%; }
+
+.btnContainer {
+  display: flex; }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .logInBtnNavBar {
+    width: 11%;
+    height: 48px; }
+  .filter {
+    margin-left: 0; }
+  .btnContainer {
+    display: flex;
+    flex-direction: column; }
+  .headerItem {
+    display: none; } }
+
 .collapsible {
   background-color: white;
   color: black;
@@ -31,13 +61,13 @@
   text-align: left;
   outline: none;
   font-size: 15px;
-  border-bottom: 1px solid #D3D3D3; }
+  border-bottom: 1px solid lightgray; }
 
 .content {
   padding: 0 18px;
   display: none;
   overflow: hidden;
-  background-color: #D3D3D3; }
+  background-color: lightgray; }
 
 .slidecontainer {
   width: 100%; }
@@ -46,7 +76,7 @@
   -webkit-appearance: none;
   width: 75%;
   height: 2px;
-  background: #d3d3d3;
+  background: lightgray;
   outline: none;
   opacity: 0.7;
   -webkit-transition: .2s;
@@ -65,42 +95,36 @@
   opacity: 1; }
 
 .slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: #FFD700;
+  background: gold;
+  -webkit-appearance: none;
+  appearance: none;
   cursor: pointer; }
 
 .slider::-moz-range-thumb {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: #FFD700;
+  background: gold;
   cursor: pointer; }
 
 .filterValue {
   display: flex;
   cursor: pointer; }
 
+.selectedFilter {
+  color: red; }
+
 .displaySide {
   width: 20% !important; }
 
-.logInBtnNavBar {
-  float: left;
-  margin: 0px 0px;
-  border: none;
-  background: none;
-  background-color: black;
-  color: white;
-  padding: 9px;
-  font-size: 120%;
-  letter-spacing: 1px;
-  outline: none;
-  transition: 0.7s;
-  cursor: pointer;
-  width: 4%; }
+.clearbtn {
+  margin-top: 7%;
+  margin-left: 19%;
+  background-color: gold;
+  border-radius: 9px; }
 
 .area {
   height: 100%;
@@ -112,7 +136,7 @@
   background-color: white;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  padding-top: 27px;
   text-align: center; }
 
 .closebtn {
@@ -126,7 +150,7 @@
   transition: 0.7s; }
 
 .filterText {
-  color: #D3D3D3;
+  color: lightgray;
   float: left;
   margin-left: 8%; }
 
@@ -137,16 +161,28 @@
 .closebtn:hover {
   color: #57ce57; }
 
+.headerButtonContainer {
+  display: none; }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .displaySide {
+    width: 58% !important; }
+  .headerButtonContainer {
+    display: flex; }
+  .mediaHeaderItem {
+    font-size: 12px;
+    margin-right: 6%; }
+  .area {
+    padding-top: 0; } }
+
 .displayContent {
   display: inline-block;
   margin: 10px;
-  padding: 15px;
-  border: 5px solid #dddbdb;
-  border-radius: 10px; }
+  padding: 15px; }
 
 .imgCover {
   width: 200px;
-  height: 170px;
+  height: 158px;
   overflow: hidden;
   border-bottom: 3px solid #dddbdb;
   cursor: pointer;
@@ -160,8 +196,34 @@
   margin-left: 50%;
   margin-top: 50%; }
 
+.itemTitle {
+  font-size: 12px;
+  margin-bottom: 1px; }
+
+.itemCategory {
+  font-size: 11px;
+  color: lightgray; }
+
+.itemPrice {
+  font-size: 11px;
+  margin-left: 63%; }
+
+.details {
+  display: flex; }
+
 .rightDisplay {
   margin-left: 20%; }
+
+.cart {
+  margin-left: 61%;
+  font-size: 13px !important; }
+
+.star {
+  font-size: 11px !important; }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .rightDisplay {
+    margin-left: 15%; } }
 
 body {
   margin: 0px;
