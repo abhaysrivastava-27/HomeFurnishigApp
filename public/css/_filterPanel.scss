@@ -1,0 +1,121 @@
+.collapsible {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border-bottom: 1px solid #D3D3D3;
+  }
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;   
+    background-color: #D3D3D3;    
+  }
+  .slidecontainer {
+    width: 100%;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 75%;
+    height: 2px;    
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  .sliderValue {
+      display:flex;
+  }
+  .minVal{
+    margin-left: 10%;
+  }
+  .maxVal {
+    margin-left: 35%;
+  }
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #FFD700;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background:#FFD700;
+    cursor: pointer;
+  }
+  .filterValue {
+    display: flex;    
+    cursor: pointer;
+  }
+  .displaySide{
+    width: 20% !important;
+}
+.logInBtnNavBar{
+    float: left;
+    margin: 0px 0px;
+    border: none;
+    background: none;
+    background-color: black;
+    color: white;
+    padding: 9px;
+    font-size: 120%;
+    letter-spacing: 1px;
+    outline: none;    
+    transition: 0.7s;
+    cursor: pointer;
+    width: 4%;
+}
+
+  .area{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+    
+}
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+    transition: 0.7s;
+}
+.filterText {
+    color:#D3D3D3;
+    float: left;
+    margin-left: 8%;
+}
+.arrow{
+    float: right;
+    font-size: 1em;
+}
+.closebtn:hover{
+    color: rgb(87, 206, 87);
+}

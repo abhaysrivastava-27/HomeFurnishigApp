@@ -1,0 +1,25 @@
+
+.header{
+margin: 0px;
+padding: 20px;
+background-color: white;    
+display: flex;
+}
+.headerItem {
+    margin-left: 2%;
+}
+.filter{
+text-align: center;
+margin: 20px auto;
+margin-left: 52%;
+margin-top: 1%;
+}
+.input {
+border:none !important;
+-webkit-appearance: none;  
+border-width: 0; 
+box-shadow: none;
+    &:focus {
+        outline: none !important;
+    }
+}

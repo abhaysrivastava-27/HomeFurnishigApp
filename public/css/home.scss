@@ -1,0 +1,12 @@
+$green:  rgb(87, 206, 87);
+$grey:  rgb(46, 49, 54);
+
+@import './header';
+@import './filterPanel';
+@import './displayPanel';
+
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}

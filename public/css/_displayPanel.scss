@@ -1,0 +1,29 @@
+ 
+  .displayContent{
+    display: inline-block;
+    margin: 10px;
+    padding: 15px;
+    border: 5px solid rgb(221, 219, 219);
+    border-radius: 10px;
+  }
+  
+  .imgCover{
+    width: 200px;
+    height: 170px;
+    overflow: hidden;
+    border-bottom: 3px solid rgb(221, 219, 219);
+    cursor: pointer;
+    overflow: hidden;
+  }  
+  .image{
+    width:200px;
+    height:160px
+  }
+  .loaderMessage{    
+    margin-left: 50%;
+    margin-top: 50%;
+  } 
+  
+.rightDisplay {
+    margin-left: 20%;
+}
