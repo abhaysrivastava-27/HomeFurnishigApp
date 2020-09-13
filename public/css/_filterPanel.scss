@@ -1,5 +1,11 @@
+@mixin sliderAppearance {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: $yellow-color;
+}
 .collapsible {
-    background-color: white;
+    background-color: $primaryColor;
     color: black;
     cursor: pointer;
     padding: 18px;
@@ -8,13 +14,13 @@
     text-align: left;
     outline: none;
     font-size: 15px;
-    border-bottom: 1px solid #D3D3D3;
+    border-bottom: 1px solid $light-grey;
   }
   .content {
     padding: 0 18px;
     display: none;
     overflow: hidden;   
-    background-color: #D3D3D3;    
+    background-color: $light-grey;    
   }
   .slidecontainer {
     width: 100%;
@@ -24,7 +30,7 @@
     -webkit-appearance: none;
     width: 75%;
     height: 2px;    
-    background: #d3d3d3;
+    background: $light-grey;
     outline: none;
     opacity: 0.7;
     -webkit-transition: .2s;
@@ -41,46 +47,34 @@
   }
   .slider:hover {
     opacity: 1;
-  }
-  
+  }  
   .slider::-webkit-slider-thumb {
+    @include sliderAppearance();
+
     -webkit-appearance: none;
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: #FFD700;
+    appearance: none;   
     cursor: pointer;
-  }
-  
+  }  
   .slider::-moz-range-thumb {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background:#FFD700;
+    @include sliderAppearance();
+
     cursor: pointer;
   }
   .filterValue {
     display: flex;    
     cursor: pointer;
   }
+  .selectedFilter {
+      color: red;
+  }
   .displaySide{
-    width: 20% !important;
+    width: 20% !important ;
 }
-.logInBtnNavBar{
-    float: left;
-    margin: 0px 0px;
-    border: none;
-    background: none;
-    background-color: black;
-    color: white;
-    padding: 9px;
-    font-size: 120%;
-    letter-spacing: 1px;
-    outline: none;    
-    transition: 0.7s;
-    cursor: pointer;
-    width: 4%;
+.clearbtn{
+    margin-top: 7%;
+    margin-left: 19%;
+    background-color: $yellow-color;
+    border-radius: 9px;
 }
 
   .area{
@@ -90,10 +84,10 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: white;
+    background-color: $primaryColor;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 27px;
     text-align: center;
     
 }
@@ -108,7 +102,7 @@
     transition: 0.7s;
 }
 .filterText {
-    color:#D3D3D3;
+    color: $light-grey;
     float: left;
     margin-left: 8%;
 }
@@ -118,4 +112,22 @@
 }
 .closebtn:hover{
     color: rgb(87, 206, 87);
+}
+.headerButtonContainer{
+    display:none
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .displaySide{
+        width: 58% !important;
+    } 
+    .headerButtonContainer{
+        display:flex;
+    }
+    .mediaHeaderItem {
+        font-size: $font-normal;
+    margin-right: 6%;
+    }
+    .area {
+        padding-top: 0;
+    }
 }

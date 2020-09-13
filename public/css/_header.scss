@@ -1,8 +1,7 @@
-
 .header{
 margin: 0px;
 padding: 20px;
-background-color: white;    
+background-color: $primaryColor;    
 display: flex;
 }
 .headerItem {
@@ -21,5 +20,40 @@ border-width: 0;
 box-shadow: none;
     &:focus {
         outline: none !important;
+    }
+}
+.logInBtnNavBar{
+    float: left;
+    margin: 0px 0px;
+    border: none;
+    background: none;
+    background-color: black;
+    color: $primaryColor;
+    padding: 9px;
+    font-size: 120%;
+    letter-spacing: 1px;
+    outline: none;    
+    transition: 0.7s;
+    cursor: pointer;
+    width: 4%;
+}
+.btnContainer {
+    display: flex;
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .logInBtnNavBar{       
+        width: 11%;
+        height: 48px;
+    }
+    .filter{       
+        margin-left: 0;      
+    }
+    .btnContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .headerItem {
+        display: none;
     }
 }
