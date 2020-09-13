@@ -5,7 +5,7 @@
   display: flex; }
 
 .headerItem {
-  margin-left: 2%; }
+  margin-left: 15%; }
 
 .filter {
   text-align: center;
@@ -50,6 +50,22 @@
     flex-direction: column; }
   .headerItem {
     display: none; } }
+
+@media (max-height: 480px) and (orientation: landscape) {
+  .logInBtnNavBar {
+    width: 13%;
+    height: 40px; }
+  .headerItem {
+    display: none; }
+  .filter {
+    margin-left: 27%; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .filter {
+    margin-left: 23%; }
+  .logInBtnNavBar {
+    width: 8%;
+    height: 45px; } }
 
 .collapsible {
   background-color: white;
@@ -212,7 +228,7 @@
   display: flex; }
 
 .rightDisplay {
-  margin-left: 20%; }
+  margin-left: 14%; }
 
 .cart {
   margin-left: 61%;
@@ -229,3 +245,17 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: Arial, Helvetica, sans-serif; }
+
+.topBtn {
+  background: none;
+  border: none;
+  color: white;
+  background-color: #454955;
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  border-radius: 50%;
+  transition: 1s;
+  margin: 0px auto;
+  outline: none;
+  cursor: pointer; }

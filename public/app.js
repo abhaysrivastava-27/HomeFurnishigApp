@@ -51,6 +51,7 @@ fetchData = () => {                 // Fetch and render initial data
     }
     var response = myData
     createDynamicHtml(response)
+    
   })
 }
 
@@ -66,7 +67,7 @@ filter = (e) => {                            // Function to filter data when use
       app.innerHTML = ''
       filteredData = myData.filter(f => f['title'].toLowerCase() == a)
       if (filteredData.length > 0) createDynamicHtml(filteredData)
-      else app.innerHTML = 'No Resuls Found! Please try with different filters'
+      else app.innerHTML = 'No Results Found! Please try with different filters'
     }
   }
 
